@@ -13,23 +13,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Slackside+One&display=swap" rel="stylesheet">
     <!-- swiper css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- gridstack -->
+    <link href="node_modules/gridstack/dist/gridstack.min.css" rel="stylesheet" />
+    <!-- masonry css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.min.css" />
+    <!-- sweet alert -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert@2/dist/sweetalert.min.css">
+    <script src="path/to/sweetalert.min.js"></script>
+
     <title>JS library</title>
 </head>
 
 <body>
-    <h1><img src="images/flower.png" alt="Zenith Logo">Zenith Home</h1>
+    <h2><img src="images/flower.png" alt="Zenith Logo">Zenith Home</h2>
     <nav>
         <ul>
             <li>Home</li>
-            <li>About</li>
+            <li>Lookbook</li>
             <li>Products</li>
             <li>Contact</li>
         </ul>
     </nav>
 
-    <!-- gallery -->
+    <!-- lookbook -->
     <div class="swiper">
-        <p id="lookbook">Check out our interior designing lookbook</p>
+        <p class="lookbook">Check out our interior designing lookbook</p>
         <div class="swiper-wrapper">
             <!-- slides -->
             <div class="swiper-slide">
@@ -52,12 +60,52 @@
         <!-- gallery buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-
     </div>
 
+    <!-- button for lookbook -->
+    <div>
+        <button id="details-btn" class="details">More Details</button>
+    </div>
+
+    <!-- new arrivals header-->
+    <p class="ml6">
+        <span class="text-wrapper">
+            <span class="letters">New Arrivals</span>
+        </span>
+    </p>
+
+    <!-- new arrivals images-->
+    <div class="grid">
+        <div class="grid-item grid-item-size2"><img src="images/table.webp" alt="side table"></div>
+        <div class="grid-item"><img src="images/desk.jpeg" alt="desk"></div>
+        <div class="grid-item grid-item-size3"><img src="images/lounge chair.webp" alt="desk"></div>
+        <div class="grid-item grid-item-size4"><img src="images/light.jpeg" alt="light"></div>
+        <div class="grid-item grid-item-size5 "><img src="images/stool.jpeg" alt="stool"></div>
+    </div>
+
+    <!-- cleave -->
+    <div class="phone">
+        <p class="notifications">Sign up for our Notifications</p>
+        <div class="phone-input">
+            <select id="country-code">
+                <option value="CA">Canada (+1)</option>
+            </select>
+            <input class="input-element" type="tel" placeholder="Enter phone number">
+        </div>
+    </div>
+
+    <!-- slider js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- text animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- masonry -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <!-- cleave -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/addons/cleave-phone.i18n.js"></script>
+    <!-- sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert@2/dist/sweetalert.min.js"></script>
     <script src="main.js"></script>
-    </script>
 </body>
 
 </html>
